@@ -1,0 +1,114 @@
+{
+    "dishes": [
+      {
+        "id": 1,
+        "name": "Борщ",
+        "description": "Традиційний український буряковий суп",
+        "price": 5,
+        "image": "./images/dishes/borsch.jpeg"
+      },
+      {
+        "id": 2,
+        "name": "Вареники",
+        "description": "Пельмені з картопляною начинкою",
+        "price": 7,
+        "image": "./images/dishes/vareniki.jpeg"
+      },
+      {
+        "id": 3,
+        "name": "Котлета по-київськи",
+        "description": "Куряча котлета з маслом всередині",
+        "price": 10,
+        "image": "./images/dishes/kotleta_po_kievski.jpeg"
+      },
+      {
+        "id": 4,
+        "name": "Деруни",
+        "description": "Картопляні млинці з соусом зі сметани",
+        "price": 6,
+        "image": "./images/dishes/deruni.jpeg"
+      },
+      {
+        "id": 5,
+        "name": "Голубці",
+        "description": "Фаршировані капустяні рулети з м'ясом та рисом",
+        "price": 8,
+        "image": "./images/dishes/golubtsi.jpeg"
+      }
+    ],
+    "drinks": [
+      {
+        "id": 6,
+        "name": "Компот",
+        "description": "Фруктовий напій",
+        "price": 2,
+        "image": "./images/drinks/kompot.jpeg"
+      },
+      {
+        "id": 7,
+        "name": "Квас",
+        "description": "Ферментований хлібний напій",
+        "price": 3,
+        "image": "./images/drinks/kvas.jpeg"
+      },
+      {
+        "id": 8,
+        "name": "Узвар",
+        "description": "Традиційний український напій з сухофруктів",
+        "price": 2,
+        "image": "./images/drinks/uzvar.jpeg"
+      },
+      {
+        "id": 9,
+        "name": "Сік березовий",
+        "description": "Свіжий березовий сік",
+        "price": 3,
+        "image": "./images/drinks/berezovii_sik.jpeg"
+      },
+      {
+        "id": 10,
+        "name": "Чай з чебрецем",
+        "description": "Ароматний трав'яний чай",
+        "price": 2,
+        "image": "./images/drinks/chebreats_tea.jpeg"
+      }
+    ],
+    "desserts": [
+      {
+        "id": 11,
+        "name": "Сирники",
+        "description": "Сирні млинці",
+        "price": 4,
+        "image": "./images/desserts/sirniki.jpeg"
+      },
+      {
+        "id": 12,
+        "name": "Медовик",
+        "description": "Медовий торт",
+        "price": 5,
+        "image": "./images/desserts/medovik.jpeg"
+      },
+      {
+        "id": 13,
+        "name": "Крем-брюле",
+        "description": "Французький десерт з карамельною скоринкою",
+        "price": 6,
+        "image": "./images/desserts/cream_brule.jpeg"
+      },
+      {
+        "id": 14,
+        "name": "Шоколадний фондан",
+        "description": "Шоколадний кекс з рідким центром",
+        "price": 7,
+        "image": "./images/desserts/fondan.jpeg"
+      },
+      {
+        "id": 15,
+        "name": "Київський торт",
+        "description": "Солодкий торт з безе та горіхами",
+        "price": 8,
+        "image": "./images/desserts/kiiv_tort.jpeg"
+      }
+    ]
+  }
+  
