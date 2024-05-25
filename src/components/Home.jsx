@@ -3,7 +3,6 @@ import '../styles/Home.css'
 import '../menu.json'
 
 const Home = () => {
-    console.log(dishes);
     return (
         <div className=''>
             <div className="restaurant">

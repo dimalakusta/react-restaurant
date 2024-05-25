@@ -9,7 +9,7 @@ const Dishes = () => {
 
 
     const getDishes = async () => {
-        await fetch('/menu.json')
+        await fetch('menu.json')
             .then(response => response.json())
             .then(data => setDishes(data.dishes));
     }

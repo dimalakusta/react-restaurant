@@ -7,7 +7,7 @@ const Drinks = () => {
     const { addToCart } = useContext(CartContext);
 
     const getDrinks= async () => {
-        await fetch('/menu.json')
+        await fetch('menu.json')
             .then(response => response.json())
             .then(data => setDrinks(data.drinks));
     }

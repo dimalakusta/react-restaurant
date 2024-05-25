@@ -7,6 +7,7 @@ import Desserts from './components/Desserts';
 import NavBar from './components/Navigation';
 import Cart from './components/Cart';
 import { CartProvider } from './CartContext';
+import { BASE_PATH } from './config';
 
 const App = () => (
   <CartProvider>
@@ -14,12 +15,11 @@ const App = () => (
       <div>
         <NavBar></NavBar>
         <Routes>
-          <Route exact path={''} element={<Home />} />
-          <Route path="/dishes" element={<Dishes />} />
-          <Route path="/drinks" element={<Drinks />} />
-          <Route path="/desserts" element={<Desserts />} />
-          <Route path="/cart" element={<Cart />} />
-
+          <Route exact path={`${BASE_PATH}`} element={<Home />} />
+          <Route path={`${BASE_PATH}dishes`} element={<Dishes />} />
+          <Route path={`${BASE_PATH}drinks`} element={<Drinks />} />
+          <Route path={`${BASE_PATH}desserts`} element={<Desserts />} />
+          <Route path={`${BASE_PATH}cart`} element={<Cart />} />
         </Routes>
       </div>
     </Router>
