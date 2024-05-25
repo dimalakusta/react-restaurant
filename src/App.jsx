@@ -14,7 +14,7 @@ const App = () => (
       <div>
         <NavBar></NavBar>
         <Routes>
-          <Route exact path="/" element={<Home />} />
+          <Route exact path={''} element={<Home />} />
           <Route path="/dishes" element={<Dishes />} />
           <Route path="/drinks" element={<Drinks />} />
           <Route path="/desserts" element={<Desserts />} />

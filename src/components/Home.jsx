@@ -1,12 +1,17 @@
 import React from 'react';
 import '../styles/Home.css'
+import '../menu.json'
 
-const Home = () => (
-    <div className=''>
-        <div className="restaurant">
-            <h1 >Ласкаво просимо до нашого ресторану!</h1>
+const Home = () => {
+    console.log(dishes);
+    return (
+        <div className=''>
+            <div className="restaurant">
+                <h1 >Ласкаво просимо до нашого ресторану!</h1>
+            </div>
         </div>
-    </div>
-);
+    );
+}
+
 
 export default Home;

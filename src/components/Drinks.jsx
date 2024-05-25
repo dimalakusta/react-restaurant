@@ -6,10 +6,14 @@ const Drinks = () => {
     const [drinks, setDrinks] = useState([]);
     const { addToCart } = useContext(CartContext);
 
-    useEffect(() => {
-        fetch('/menu.json')
+    const getDrinks= async () => {
+        await fetch('/menu.json')
             .then(response => response.json())
             .then(data => setDrinks(data.drinks));
+    }
+
+    useEffect(() => {
+        getDrinks()
     }, []);
 
     return (

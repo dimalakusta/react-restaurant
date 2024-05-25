@@ -8,10 +8,14 @@ const Dishes = () => {
     const { addToCart } = useContext(CartContext);
 
 
-    useEffect(() => {
-        fetch('/menu.json')
+    const getDishes = async () => {
+        await fetch('/menu.json')
             .then(response => response.json())
             .then(data => setDishes(data.dishes));
+    }
+
+    useEffect(() => {
+        getDishes()
     }, []);
 
     return (

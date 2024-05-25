@@ -6,10 +6,14 @@ const Desserts = () => {
     const [desserts, setDesserts] = useState([]);
     const { addToCart } = useContext(CartContext);
 
-    useEffect(() => {
-        fetch('/menu.json')
+    const getDesserts = async () => {
+        await fetch('/menu.json')
             .then(response => response.json())
             .then(data => setDesserts(data.desserts));
+    }
+
+    useEffect(() => {
+        getDesserts()
     }, []);
 
     return (
@@ -17,9 +21,9 @@ const Desserts = () => {
             <div className='wrapper'>
                 <h1>Десерти</h1>
                 <div className="menu-items">
-                {desserts.map(dessert => (
-          <MenuItem key={dessert.id} item={dessert} addToCart={addToCart} />
-        ))}
+                    {desserts.map(dessert => (
+                        <MenuItem key={dessert.id} item={dessert} addToCart={addToCart} />
+                    ))}
                 </div>
             </div>
         </div>
