@@ -1,0 +1,26 @@
+.restaurant {
+    position: relative;
+    height: 100vh;
+    background-image: url('/images/restaurant.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.restaurant::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Темне затемнення */
+}
+
+.restaurant h1 {
+    color: white;
+    font-size: 45px;
+    text-align: center;
+    padding-top: 200px;
+    position: relative; /* Необхідно додати позиціонування для коректного відображення */
+    z-index: 1; /* Підняти текст над затемненням */
+}
