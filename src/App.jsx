@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import Home from './components/Home';
 import Dishes from './components/Dishes';
 import Drinks from './components/Drinks';
@@ -20,6 +20,8 @@ const App = () => (
           <Route path={`${BASE_PATH}drinks`} element={<Drinks />} />
           <Route path={`${BASE_PATH}desserts`} element={<Desserts />} />
           <Route path={`${BASE_PATH}cart`} element={<Cart />} />
+          <Route path="*" element={<Navigate to={`${BASE_PATH}`}/>} />
+
         </Routes>
       </div>
     </Router>
